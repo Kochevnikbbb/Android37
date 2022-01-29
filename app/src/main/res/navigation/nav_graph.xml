@@ -21,4 +21,16 @@
         android:name="com.nomad.android37.ui.PeopleFragment"
         android:label="fragment_people"
         tools:layout="@layout/fragment_people" />
+    <fragment
+        android:id="@+id/photoFragment2"
+        android:name="com.nomad.android37.ui.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+    <fragment
+        android:id="@+id/photo2Fragment"
+        android:name="com.nomad.android37.ui.Photo2Fragment"
+        android:label="fragment_photo2"
+        tools:layout="@layout/fragment_photo2" />
+
+
 </navigation>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".ui.PeopleFragment">
+
     <LinearLayout
         android:id="@+id/insta_login"
         android:layout_width="match_parent"
@@ -35,60 +36,66 @@
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/insta_login">
+
         <ImageView
             android:layout_width="86dp"
             android:layout_height="86dp"
             android:layout_marginStart="16dp"
-            android:background="@drawable/paren"/>
+            android:background="@drawable/paren" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
             android:text="   32\nPosts"
-            android:layout_marginStart="40dp"
-            android:layout_gravity="center"/>
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
             android:text="14.9 тыс.\nFollowers"
-            android:layout_marginStart="40dp"
-            android:layout_gravity="center"/>
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:text="     729\nFollowing"
+            android:layout_gravity="center"
             android:layout_marginStart="32dp"
-            android:layout_gravity="center"/>
+            android:text="     729\nFollowing"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/bakai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Belekov Bakai Bakytbekovich"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shapka"/>
+        app:layout_constraintTop_toBottomOf="@+id/shapka" />
+
     <TextView
         android:id="@+id/profesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Предприниматель"
-        android:textSize="8sp"
-        android:layout_marginTop="4dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Предприниматель"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bakai"/>
+        app:layout_constraintTop_toBottomOf="@+id/bakai" />
 
     <TextView
+        android:id="@+id/edit_profile"
         android:layout_width="344dp"
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
@@ -100,6 +107,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profesion" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_profile" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" >
+
+    </androidx.viewpager2.widget.ViewPager2>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
