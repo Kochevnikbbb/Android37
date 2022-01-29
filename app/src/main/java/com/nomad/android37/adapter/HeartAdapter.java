@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class HeartAdapter extends RecyclerView.Adapter<HeartAdapter.CounttViewHolder> {
     ArrayList<Likee> likee;
+    private ItemLikeBinding binding;
 
     public HeartAdapter(ArrayList<Likee> likee) {
         this.likee = likee;
@@ -25,7 +26,7 @@ public class HeartAdapter extends RecyclerView.Adapter<HeartAdapter.CounttViewHo
     @NonNull
     @Override
     public CounttViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemLikeBinding binding = ItemLikeBinding.inflate(LayoutInflater.from(parent.getContext()),
+        binding = ItemLikeBinding.inflate(LayoutInflater.from(parent.getContext()),
                 parent,false);
         return new CounttViewHolder(binding);
     }
@@ -46,6 +47,7 @@ public class HeartAdapter extends RecyclerView.Adapter<HeartAdapter.CounttViewHo
 
         public CounttViewHolder(@NonNull ItemLikeBinding itemView) {
             super(itemView.getRoot());
+             binding = itemView;
         }
 
         public void bind(Likee likee) {

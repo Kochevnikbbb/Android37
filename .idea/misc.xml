@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/drawable-v24/bc_bt.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/drawable/bc_bt_insta.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/drawable/bc_item_like.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.25" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/drawable/ic_heart.xml" value="0.25" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/fragment_heart.xml" value="0.2" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/fragment_people.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/fragment_people.xml" value="0.264" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/item_insta.xml" value="0.264" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/layout/item_like.xml" value="0.4" />
         <entry key="..\:/Users/bbbaa/AndroidStudioProjects/Android37/app/src/main/res/menu/bottom_navigation.xml" value="0.2" />
